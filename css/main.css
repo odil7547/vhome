@@ -1,0 +1,189 @@
+@import url("https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none !important;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: url("https://w.forfun.com/fetch/ac/ac5792e2da3dfe77ad566c4281296ec5.jpeg") center/cover;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+i.fi {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  padding: 15px 20px;
+  width: 100%;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  font-weight: 600px;
+  background: inherit;
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: inset 0 0 10px #000;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100vh;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  margin: auto;
+  max-width: 600px;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 999;
+}
+
+form {
+  width: 100%;
+  margin: 0 0 50px;
+}
+
+.bookmarks {
+  min-height: 220px;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px 25px;
+}
+
+.bookmarks li.edit {
+  animation: shake 0.2s linear infinite alternate;
+}
+
+.bookmarks a {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background: #354346;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #fff;
+  transition: .2s;
+  position: relative;
+}
+
+
+.bookmarks a .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+  opacity: 0.4;
+  border-radius: 50%;
+  cursor: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: .2s;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookmarks li.edit a .overlay {
+  display: flex;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.bookmarks a .overlay i {
+  padding: 5px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.bookmarks a .remove {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 20px;
+  height: 20px;
+  background: red;
+  font-size: 14px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.bookmarks li.edit a .remove {
+  display: flex;
+
+}
+
+.bookmarks a img {
+  padding: 10px;
+  border-radius: 100px;
+}
+
+.bookmarks a:hover {
+  scale: 1.1;
+}
+
+.bookmarks a:hover .overlay {
+  visibility: visible;
+  opacity: 0.4;
+}
+
+.add_bookmark {
+  margin-top: 30px;
+  padding: 10px 0;
+  width: 100%;
+  background: #354346;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@keyframes shake {
+  from {
+    rotate: -3deg
+  }
+
+  to {
+    rotate: 3deg
+  }
+}
